@@ -1,0 +1,229 @@
+/*
+* T2 Grid System v1.0
+* Copyright 2011, ThemeTon
+* www.themeton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/28/2012
+*/
+
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.visible-phone {
+  display: none;
+}
+
+.visible-tablet {
+  display: none;
+}
+
+.hidden-desktop {
+  display: none;
+}
+
+.visible-desktop {
+  display: inherit;
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .hidden-desktop {
+    display: inherit;
+  }
+  .visible-desktop {
+    display: none;
+  }
+  .visible-tablet {
+    display: inherit;
+  }
+  .hidden-tablet {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .hidden-desktop {
+    display: inherit;
+  }
+  .visible-desktop {
+    display: none;
+  }
+  .visible-phone {
+    display: inherit;
+  }
+  .hidden-phone {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  
+  .wrapper {
+	width: 1230px;
+  }
+  .container {
+  	width: 1170px;
+  	margin-right: auto;
+  	margin-left: auto;
+  	*zoom: 1;
+  }
+  .container
+  .container:before,
+  .container:after {
+  	display: table;
+  	line-height: 0;
+  	content: "";
+  }
+  
+  .container:after {
+  	clear: both;
+  }
+  
+  .row {
+  	margin-left: -30px !important;
+  	*zoom:1;
+  }
+  .row:before,
+  .row:after {
+  	display: table;
+  	line-height: 0;
+  	content: "";
+  }
+  .row:after {
+  	clear: both;
+  }
+  
+  .col {
+  	float: left;
+  	min-height: 1px;
+  	margin-left: 30px;
+  	-webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;
+  }
+  .col.twelve	{ width: 1170px; }
+  .col.elven 	{ width: 1070px; }
+  .col.ten 		{ width: 970px; }
+  .col.nine 	{ width: 870px; }
+  .col.eight 	{ width: 770px; }
+  .col.seven 	{ width: 670px; }
+  .col.six 		{ width: 570px; }
+  .col.five 	{ width: 470px; }
+  .col.four 	{ width: 370px; }
+  .col.three 	{ width: 270px; }
+  .col.two 		{ width: 170px; }
+  .col.one 		{ width: 70px; }
+
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  
+  .wrapper {
+  	width: 768px;
+  }
+  .wrapper #top, .wrapper #header, .wrapper #main, .wrapper #footer, .wrapper #bottom {
+  	padding-left: 22px;
+  	padding-right: 22px;
+  }
+  .container {
+  	width: 724px;
+  	margin-right: auto;
+  	margin-left: auto;
+  	*zoom: 1;
+  }
+  .container
+  .container:before,
+  .container:after {
+  	display: table;
+  	line-height: 0;
+  	content: "";
+  }
+  
+  .container:after {
+  	clear: both;
+  }
+  
+  .row {
+  	margin-left: -20px;
+  	*zoom:1;
+  }
+  .row:before,
+  .row:after {
+  	display: table;
+  	line-height: 0;
+  	content: "";
+  }
+  .row:after {
+  	clear: both;
+  }
+  
+  .col {
+  	float: left;
+  	min-height: 1px;
+  	margin-left: 20px;
+  	-webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;
+  }
+  .col.twelve	{ width: 724px; }
+  .col.elven 	{ width: 662px; }
+  .col.ten 		{ width: 600px; }
+  .col.nine 	{ width: 538px; }
+  .col.eight 	{ width: 476px; }
+  .col.seven 	{ width: 414px; }
+  .col.six 		{ width: 352px; }
+  .col.five 	{ width: 290px; }
+  .col.four 	{ width: 228px; }
+  .col.three 	{ width: 166px; }
+  .col.two 		{ width: 104px; }
+  .col.one 		{ width: 42px; }
+  
+}
+
+@media (max-width: 767px) {
+
+  .container {
+    width: auto;
+    margin: 0 20px;
+  }
+  .row{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .col {
+    display: block;
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .col.twelve, .col.elven, .col.ten, .col.nine, .col.eight, .col.seven, .col.six, .col.five, .col.four, .col.three, .col.two, .col.one {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+@media (max-width: 480px) {
+  
+}
+
+@media (max-width: 979px) {
+  
+}
+
+@media (min-width: 980px) {
+  
+}
