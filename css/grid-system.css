@@ -1,0 +1,62 @@
+/*
+* T2 Grid System v1.0
+* Copyright 2011, ThemeTon
+* www.themeton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/28/2012
+*/
+
+.container {
+	width: 940px;
+	margin-right: auto;
+	margin-left: auto;
+	*zoom: 1;
+	
+}
+.container
+.container:before,
+.container:after {
+	display: table;
+	line-height: 0;
+	content: "";
+}
+
+.container:after {
+	clear: both;
+}
+
+.row {
+	margin-left: -20px !important;
+	*zoom:1;
+}
+.row:before,
+.row:after {
+	display: table;
+	line-height: 0;
+	content: "";
+}
+.row:after {
+	clear: both;
+}
+
+.col {
+	float: left;
+	min-height: 1px;
+	margin-left: 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.col.twelve		{ width: 940px; }
+.col.elven 		{ width: 860px; }
+.col.ten 		{ width: 780px; }
+.col.nine 		{ width: 700px; }
+.col.eight 		{ width: 620px; }
+.col.seven 		{ width: 540px; }
+.col.six 		{ width: 460px; }
+.col.five 		{ width: 380px; }
+.col.four 		{ width: 300px; }
+.col.three 		{ width: 220px; }
+.col.two 		{ width: 140px; }
+.col.one 		{ width: 60px; }
